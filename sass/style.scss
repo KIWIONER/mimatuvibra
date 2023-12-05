@@ -7,7 +7,6 @@ body{
     a{text-decoration:none;color:black;font-size:20px;}
 }
 
-
 /*===========================*/
 /*HEADER*/
 /*============================*/
@@ -173,7 +172,7 @@ body{
     }
 }
 /*==========================*/
-/* 2 SECCION DE CURSOS.HTML*/
+/*MAINGRIDNOSOTROS*/
 /*==========================*/
 .mainGridNosotros{
     .portadaNosotros{
@@ -211,96 +210,107 @@ body{
                 padding:20px;
                 }
             }
+            .tituloNosotros{
+                display:flex;
+                flex-direction:column;
+                text-align:center;
+                color:white;
+                background-color: black;
+                border-radius:15px;
+                margin: 20px;
+            }
+        }
+    .contentNosotros{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        text-align: center;
+        max-width:100%;
+        .text-nosotros{
+            background-color: rgb(0, 0, 0);
+            display:flex;
+            justify-content: space-evenly;
+            color:white;
+            flex-direction:column;
+            max-width:33%;
+            img{ height:300px; width: 200px;}
+            margin:20px;
+            border-radius: 15px;
+            }
         }
 }
-
-/*----------------------------------*/
 /*==========================*/
-/* 3 SECCION DE NOSOTROS.HTML*/
+/* MAINGRIDCONTACTO.HTML*/
 /*==========================*/
-
-
-
-.content-nosotros{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    text-align: center;
+.mainGridContacto{
+    .portadaContacto{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        .bannerContactoImg{
+            display:flex;
+            align-content: center;
+            justify-content:center;
+            img {border-radius: 15px;}
+            } 
+        .bannerContactoTexto{
+            border-radius: 15px;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+            }
+    }
+    .contactoFlex{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: start;
+        background-color: rgb(3, 3, 3);
+        padding:20px;
+        margin:20px;
+        border-radius:15px;
+        .img-contacto img{
+            width:700px;
+            height:480px;
+        }
+        .formulario{
+            width:500px;
+            height:400px;
+            margin-top: 40px;
+            background-color: rgb(0, 0, 0);
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            color: white;
+                .formulario input{
+                    height: 25px;
+                }
+                .formularioFlex{
+                    display:flex;
+                    flex-direction: column;
+                    width:400px;
+                    margin:5px;
+                }
+                .formularioFlex1{
+                    display:flex;
+                    flex-direction:row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin:10px;
+                    padding:5px;
+                    }
+            }  
+    }
 }
 
-.titulo-nosotros{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    color:white;
-    background-color: black;
-    border-radius:15px;
-    margin: 20px;
-}
-
-.text-nosotros{
-    background-color: rgb(0, 0, 0);
-    display:flex;
-    color:white;
-    flex-direction:column;
-    width:500px;
-    margin:20px;
-    padding:15px;
-    border-radius:15px;
-    
-}
-.text-nosotros img{
-    width:50%;
-}
 /*---------------------------------------------*/
 
 /*==========================*/
 /* 4 SECCION DE CONTACTO.HTML*/
 /*==========================*/
-
-.contactoFlex{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: start;
-    background-color: rgb(3, 3, 3);
-    padding:20px;
-    margin:20px;
-    border-radius:15px;
-    .img-contacto img{
-        width:700px;
-        height:480px;
-    }
-    .formulario{
-        width:500px;
-        height:400px;
-        margin-top: 40px;
-        background-color: rgb(0, 0, 0);
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color: white;
-            .formulario input{
-                height: 25px;
-            }
-            .formularioFlex{
-                display:flex;
-                flex-direction: column;
-                width:400px;
-                margin:5px;
-            }
-            .formularioFlex1{
-                display:flex;
-                flex-direction:row;
-                align-items: center;
-                justify-content: space-evenly;
-                margin:10px;
-                padding:5px;
-                }
-            }  
-        }
 
 
 
@@ -411,12 +421,18 @@ body{
 
 .boton{
     width:200px;
+    height: 50px;
+    align-content:center;
+    align-items: center;
     background-color: black;
     border: none;
     font-size: 20px;
     color:white;
-    padding:3%;
     border-radius: 5px;
+    a :hover{
+        background-color: greenyellow;
+        color:#000000;
+    }
 }
 
 .boton2{

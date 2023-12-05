@@ -198,7 +198,7 @@ body a {
 }
 
 /*==========================*/
-/* 2 SECCION DE CURSOS.HTML*/
+/*MAINGRIDNOSOTROS*/
 /*==========================*/
 .mainGridNosotros .portadaNosotros {
   display: flex;
@@ -237,19 +237,7 @@ body a {
   border-radius: 30px;
   padding: 20px;
 }
-
-/*----------------------------------*/
-/*==========================*/
-/* 3 SECCION DE NOSOTROS.HTML*/
-/*==========================*/
-.content-nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.titulo-nosotros {
+.mainGridNosotros .galeriaNosotros .tituloNosotros {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -258,27 +246,52 @@ body a {
   border-radius: 15px;
   margin: 20px;
 }
-
-.text-nosotros {
+.mainGridNosotros .contentNosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+}
+.mainGridNosotros .contentNosotros .text-nosotros {
   background-color: rgb(0, 0, 0);
   display: flex;
+  justify-content: space-evenly;
   color: white;
   flex-direction: column;
-  width: 500px;
+  max-width: 33%;
   margin: 20px;
-  padding: 15px;
   border-radius: 15px;
 }
-
-.text-nosotros img {
-  width: 50%;
+.mainGridNosotros .contentNosotros .text-nosotros img {
+  height: 300px;
+  width: 200px;
 }
 
-/*---------------------------------------------*/
 /*==========================*/
-/* 4 SECCION DE CONTACTO.HTML*/
+/* MAINGRIDCONTACTO.HTML*/
 /*==========================*/
-.contactoFlex {
+.mainGridContacto .portadaContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainGridContacto .portadaContacto .bannerContactoImg {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.mainGridContacto .portadaContacto .bannerContactoImg img {
+  border-radius: 15px;
+}
+.mainGridContacto .portadaContacto .bannerContactoTexto {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+.mainGridContacto .contactoFlex {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -288,11 +301,11 @@ body a {
   margin: 20px;
   border-radius: 15px;
 }
-.contactoFlex .img-contacto img {
+.mainGridContacto .contactoFlex .img-contacto img {
   width: 700px;
   height: 480px;
 }
-.contactoFlex .formulario {
+.mainGridContacto .contactoFlex .formulario {
   width: 500px;
   height: 400px;
   margin-top: 40px;
@@ -304,16 +317,16 @@ body a {
   align-items: center;
   color: white;
 }
-.contactoFlex .formulario .formulario input {
+.mainGridContacto .contactoFlex .formulario .formulario input {
   height: 25px;
 }
-.contactoFlex .formulario .formularioFlex {
+.mainGridContacto .contactoFlex .formulario .formularioFlex {
   display: flex;
   flex-direction: column;
   width: 400px;
   margin: 5px;
 }
-.contactoFlex .formulario .formularioFlex1 {
+.mainGridContacto .contactoFlex .formulario .formularioFlex1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -322,6 +335,10 @@ body a {
   padding: 5px;
 }
 
+/*---------------------------------------------*/
+/*==========================*/
+/* 4 SECCION DE CONTACTO.HTML*/
+/*==========================*/
 /*==========================*/
 /* 5 SECCION DE LA PÁGINA CARTA.HTML*/
 /*==========================*/
@@ -426,12 +443,18 @@ body a {
 /*==========================*/
 .boton {
   width: 200px;
+  height: 50px;
+  align-content: center;
+  align-items: center;
   background-color: black;
   border: none;
   font-size: 20px;
   color: white;
-  padding: 3%;
   border-radius: 5px;
+}
+.boton a :hover {
+  background-color: greenyellow;
+  color: #000000;
 }
 
 .boton2 {
