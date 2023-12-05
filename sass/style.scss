@@ -1,21 +1,15 @@
-h1{
-    font-size:40px;
-}
-h2{
-    font-size:30px;
-}
-h3{
-    font-size:20px;
-}
-p{
-    font-size: 20px;
-}
-ul{
-    list-style-type: none;
+body{
+    h1{font-size:40px;}
+    h2{font-size:30px;}
+    h3{font-size:20px;}
+    p{font-size: 20px;}
+    ul{list-style-type: none;}
+    a{text-decoration:none;color:black;font-size:20px;}
 }
 
+
 /*===========================*/
-/*SECCION DEL HEADER*/
+/*HEADER*/
 /*============================*/
 .headerGrid{
     grid-area:"headerGrid";
@@ -23,171 +17,201 @@ ul{
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    .navFlex {
-        grid-area: "navFlex"; 
+    padding:20px;
+    .navFlex{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        a{
-            padding:30px;
-            font-size: 20px;
-            color:rgb(0, 0, 0);
-            text-decoration-line: none;
+        justify-items: center;
+        a{padding-left:20px; padding-right: 20px;
         }
-
-    }
-    .logo {grid-area: "logo";
+        & :hover{
+            color: rgb(255, 217, 0);
+        }
+        }
+    .logo{
+        grid-area: "logo";
         display:flex;
         }
     .carrito {
-            grid-area: "carrito";
-            display:flex;
-            align-content: center;
-            justify-items: center ; 
-            justify-content: center;  
+        grid-area: "carrito";
+        display:flex;
+        align-content: center;
+        justify-items: center ; 
+        justify-content: center;  
         }
 }
-
-
-    .portada{
+/*===========================*/
+/*MAINGRIDINDEX*/
+/*============================*/
+.mainGridIndex{
+    /*section1*/
+    .portadaIndex{
         display:flex; 
         flex-direction:column;
         text-align: center;
         align-content: center;
+        .bannerIndexImg{
+            display: flex;
+            flex-direction:column;
+            text-align: center;
+            align-items:center;
+            max-width: 100%;
+            justify-content:center;
+            margin:10px;
+            img {border-radius:15px;} 
+        }
+        .portadaIndex-content{
+            display: flex;
+            flex-direction: column;
+            margin:10px;
+            text-align: center;
+            justify-content:center;
+            align-content: center;
+            max-width: 100%;
+            padding:15px;
+            background-color: black;
+            color: white;
+            border-radius:15px;
+        }
     }
-
-    .portada-content{
-        margin:20px;
-        max-width: 100%;
-        padding:15px;
-        background-color: black;
-        color: white;
-        border-radius:15px;
-    }
-
-    .portada-img{
-        display: flex;
-        flex-direction:column;
+    /*section2*/
+    .presentacionIndex { 
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
         text-align: center;
-        max-width: 100%;
+        margin:10px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        .presentacionIndexTexto{
+            display:flex;
+            flex-direction:column;
+            max-width:50%;
+            padding:10px;
+        }
+        .presentacionIndexImg{
+            max-width: 100%;
+            padding:10px;
+                img{width:70%;
+                height:70%;}
+        }
+    }
+    /*section3*/
+    .presentacion2Index{
+        display:flex;
+        margin-top: 30px;
+        padding: 20px;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+        background-color:#000000;
+        color: rgb(255, 255, 255);  
+        border-radius:15px;
+    }
+    /*section4*/
+    .banner2IndexImg {
+        display: flex;
+            flex-direction:column;
+            text-align: center;
+            align-items:center;
+            max-width: 100%;
+            justify-content:center;
+            margin:10px;
+            img {border-radius:15px;}
+    }
+    /*section5*/
+    .galeriaIndex{
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+        article img {
+            width:50%;
+            border-radius:15px;
+        }
+    }
+}
+/*===========================*/
+/*MAINGRIDCURSOS*/
+/*============================*/
+.mainGridCursos{
+    /*section1*/
+    .portadaCursos{
+        display:flex;
+        flex-direction:column;
         justify-content:center;
+        .bannerCursosImg{
+            display:flex;
+            align-content: center;
+            justify-content:center;
+            img {border-radius: 15px;}
+            }  
+        .bannerCursosTexto{
+            border-radius: 15px;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+        }
     }
-
-    .portada-img img{
-        border-radius:15px;
-        margin:20px;
-
+    .galeriaCursos{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        .galeria-producto{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        img{
+            max-width: 50%;
+            border-radius:15px;
+        }
     }
-    
-    .portada-text{
-        background-color:black;
-        color:white;
-        margin:20px;
-        border-radius:15px;
-    }
-
-
-/*------------------------*/
-
-/*==========================*/
-/*SECCION DEL NAVEGADOR*/
-/*==========================*/
-
-
-/*-------------------------------------------------*/
-/*==========================*/
-/*CSS DE MAIN */
-/*==========================*/
-
-/*==========================*/
-/* 1 - SECCION DE INDEX.HTML*/
-/*==========================*/
-
-/*==========================*/
-/* 1.1 SECCION DE PORTADA*/
-/*==========================*/
-
-.content-inicio{
-    display:flex;
-    margin-top: 30px;
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-    text-align: center;
-    background-color:#000000;
-    color: rgb(255, 255, 255);  
-    border-radius:15px;
 }
-/*==========================*/
-/* 1.2 SECCION DE PRESENTACION*/
-/*==========================*/
-
-.presentacion-inicio img{
-    max-width:100%;
-}
-
-.presentacion-inicio { 
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin-top:20px;
-    margin-bottom: 20px;
-}
-
-.presentacion-inicio p{
-    margin:30px;
-    text-align: justify;
-}
-
-.presentacion-inicio article{
-    width:700px;
-} 
-/*==========================*/
-/* 1.3 SECCION DEL BANNER INDEX*/
-/*==========================*/
-.banner-inicio{
-    display:flex;
-    margin-top:20px;
-    justify-content: center;
-}
-
-.galeria-inicio{
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
-    
-}
-
-.galeria-inicio div img{
-    width:80%;
-    border-radius:15px;
-}
-/*----------------------------------*/
-
 /*==========================*/
 /* 2 SECCION DE CURSOS.HTML*/
 /*==========================*/
-.galeria-cursos img{
-    width:50%;
-    border-radius:15px;
-}
+.mainGridNosotros{
+    .portadaNosotros{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        .bannerNosotrosImg{
+            display:flex;
+            align-content: center;
+            justify-content:center;
+            img {border-radius: 15px;}
+            }
+        .bannerNosotrosTexto{
+            border-radius: 15px;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
 
-.galeria-cursos{
-display:flex;
-flex-direction:row;
-margin-bottom:40px;
-
-}
-
-.galeria-producto{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+        }
+    }
+    .galeriaNosotros{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        .galeriaNosotrosImg{
+            display:flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+            img {
+                width:30%;
+                border-radius:30px;
+                padding:20px;
+                }
+            }
+        }
 }
 
 /*----------------------------------*/
@@ -195,17 +219,7 @@ margin-bottom:40px;
 /* 3 SECCION DE NOSOTROS.HTML*/
 /*==========================*/
 
-.galeria-nosotros{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom:20px;
-    
-}
-.galeria-nosotros img{
-width:500px;
-border-radius:15px;
-}
+
 
 .content-nosotros{
     display:flex;
@@ -244,10 +258,6 @@ border-radius:15px;
 /* 4 SECCION DE CONTACTO.HTML*/
 /*==========================*/
 
-.img-contacto img{
-    width:700px;
-    height:480px;
-}
 .contactoFlex{
     display:flex;
     flex-direction:row;
@@ -257,40 +267,43 @@ border-radius:15px;
     padding:20px;
     margin:20px;
     border-radius:15px;
-}
+    .img-contacto img{
+        width:700px;
+        height:480px;
+    }
+    .formulario{
+        width:500px;
+        height:400px;
+        margin-top: 40px;
+        background-color: rgb(0, 0, 0);
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: white;
+            .formulario input{
+                height: 25px;
+            }
+            .formularioFlex{
+                display:flex;
+                flex-direction: column;
+                width:400px;
+                margin:5px;
+            }
+            .formularioFlex1{
+                display:flex;
+                flex-direction:row;
+                align-items: center;
+                justify-content: space-evenly;
+                margin:10px;
+                padding:5px;
+                }
+            }  
+        }
 
-.formulario{
-    width:500px;
-    height:400px;
-    background-color: rgb(0, 0, 0);
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding:42px;
-    border:solid white 2px;
-    color: white;
-}
-.formulario input{
-    height: 25px;
-}
-.formularioFlex{
-    display:flex;
-    flex-direction: column;
-    width:400px;
-    margin:5px;
-}
 
-.formularioFlex1{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin:10px;
-    padding:5px;
-}
-    
+
 
 
 /*==========================*/
@@ -451,10 +464,10 @@ border-radius:15px;
 .indexGrid{
     display:grid;
     grid-template-columns: 100% ;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 10% 80% 10%;
     grid-template-areas:
     "headerGrid headerGrid headerGrid"
-    "mainGrid mainGrid mainGrid"
+    "mainGridIndex mainGridIndex mainGridIndex"
     "footerGrid footerGrid footerGrid";
 }
 
@@ -464,10 +477,10 @@ border-radius:15px;
 .cursosGrid{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 10% 80% 10%;
     grid-template-areas:
     "headerGrid headerGrid headerGrid"
-    "mainGrid mainGrid mainGrid"
+    "mainGridCursos mainGridCursos mainGridCursos"
     "footerGrid footerGrid footerGrid";
 }
 
@@ -478,10 +491,10 @@ border-radius:15px;
 .nostrosGrid{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows:auto auto auto;
+    grid-template-rows: 10% 80% 10%;
     grid-template-areas:
     "headerGrid headerGrid headerGrid"
-    "mainGrid mainGrid mainGrid"
+    "mainGridNosotros mainGridNosotros mainGridNosotros"
     "footerGrid footerGrid footerGrid";
 }
 
@@ -516,6 +529,7 @@ border-radius:15px;
 /*==========================*/
 /*------AREAS CON GRID------*/
 /*==========================*/
+
 
 
 
@@ -593,10 +607,6 @@ border-radius:15px;
         "mainGrid"
         "footerGrid";
     }
-    .navFlex a{
-        display:flex;
-        margin:auto;
-        flex-direction: column;
     }
     .galeria-cursos{
         display:flex;
@@ -608,7 +618,7 @@ border-radius:15px;
     footer{
         border-radius:15px;
     }
-}
+
 
 /*==========================*/
 /*------MEDIAQUERY PARA NOSOTROS.HTML------*/
@@ -630,10 +640,10 @@ border-radius:15px;
         flex-direction: column;
         flex-wrap:wrap;
         align-content: stretch;
-        padding:2px;
+
     }
-    .navFlex a{
-        padding:3px;
+
+
     }
     .galeria-nosotros img{
         display:flex;
@@ -651,5 +661,4 @@ border-radius:15px;
         flex-direction:column;
         max-width:100%;
     }
-}
 

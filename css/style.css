@@ -1,26 +1,27 @@
 @charset "UTF-8";
-h1 {
+body h1 {
   font-size: 40px;
 }
-
-h2 {
+body h2 {
   font-size: 30px;
 }
-
-h3 {
+body h3 {
   font-size: 20px;
 }
-
-p {
+body p {
   font-size: 20px;
 }
-
-ul {
+body ul {
   list-style-type: none;
+}
+body a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 /*===========================*/
-/*SECCION DEL HEADER*/
+/*HEADER*/
 /*============================*/
 .headerGrid {
   grid-area: "headerGrid";
@@ -31,16 +32,17 @@ ul {
   padding: 20px;
 }
 .headerGrid .navFlex {
-  grid-area: "navFlex";
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-items: center;
 }
 .headerGrid .navFlex a {
-  padding: 30px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.headerGrid .navFlex :hover {
+  color: rgb(255, 217, 0);
 }
 .headerGrid .logo {
   grid-area: "logo";
@@ -54,57 +56,72 @@ ul {
   justify-content: center;
 }
 
-.portada {
+/*===========================*/
+/*MAINGRIDINDEX*/
+/*============================*/
+.mainGridIndex {
+  /*section1*/
+  /*section2*/
+  /*section3*/
+  /*section4*/
+  /*section5*/
+}
+.mainGridIndex .portadaIndex {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-content: center;
 }
-
-.portada-content {
-  margin: 20px;
+.mainGridIndex .portadaIndex .bannerIndexImg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+.mainGridIndex .portadaIndex .bannerIndexImg img {
+  border-radius: 15px;
+}
+.mainGridIndex .portadaIndex .portadaIndex-content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
   max-width: 100%;
   padding: 15px;
   background-color: black;
   color: white;
   border-radius: 15px;
 }
-
-.portada-img {
+.mainGridIndex .presentacionIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mainGridIndex .presentacionIndex .presentacionIndexTexto {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  max-width: 50%;
+  padding: 10px;
+}
+.mainGridIndex .presentacionIndex .presentacionIndexImg {
   max-width: 100%;
-  justify-content: center;
+  padding: 10px;
 }
-
-.portada-img img {
-  border-radius: 15px;
-  margin: 20px;
+.mainGridIndex .presentacionIndex .presentacionIndexImg img {
+  width: 70%;
+  height: 70%;
 }
-
-.portada-text {
-  background-color: black;
-  color: white;
-  margin: 20px;
-  border-radius: 15px;
-}
-
-/*------------------------*/
-/*==========================*/
-/*SECCION DEL NAVEGADOR*/
-/*==========================*/
-/*-------------------------------------------------*/
-/*==========================*/
-/*CSS DE MAIN */
-/*==========================*/
-/*==========================*/
-/* 1 - SECCION DE INDEX.HTML*/
-/*==========================*/
-/*==========================*/
-/* 1.1 SECCION DE PORTADA*/
-/*==========================*/
-.content-inicio {
+.mainGridIndex .presentacion2Index {
   display: flex;
   margin-top: 30px;
   padding: 20px;
@@ -115,92 +132,116 @@ ul {
   color: rgb(255, 255, 255);
   border-radius: 15px;
 }
-
-/*==========================*/
-/* 1.2 SECCION DE PRESENTACION*/
-/*==========================*/
-.presentacion-inicio img {
-  max-width: 100%;
-}
-
-.presentacion-inicio {
+.mainGridIndex .banner2IndexImg {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.presentacion-inicio p {
-  margin: 30px;
-  text-align: justify;
-}
-
-.presentacion-inicio article {
-  width: 700px;
-}
-
-/*==========================*/
-/* 1.3 SECCION DEL BANNER INDEX*/
-/*==========================*/
-.banner-inicio {
-  display: flex;
-  margin-top: 20px;
+  align-items: center;
+  max-width: 100%;
   justify-content: center;
+  margin: 10px;
 }
-
-.galeria-inicio {
+.mainGridIndex .banner2IndexImg img {
+  border-radius: 15px;
+}
+.mainGridIndex .galeriaIndex {
   display: flex;
   flex-direction: row;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-
-.galeria-inicio div img {
-  width: 80%;
-  border-radius: 15px;
-}
-
-/*----------------------------------*/
-/*==========================*/
-/* 2 SECCION DE CURSOS.HTML*/
-/*==========================*/
-.galeria-cursos img {
+.mainGridIndex .galeriaIndex article img {
   width: 50%;
   border-radius: 15px;
 }
 
-.galeria-cursos {
+/*===========================*/
+/*MAINGRIDCURSOS*/
+/*============================*/
+.mainGridCursos {
+  /*section1*/
+}
+.mainGridCursos .portadaCursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainGridCursos .portadaCursos .bannerCursosImg {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.mainGridCursos .portadaCursos .bannerCursosImg img {
+  border-radius: 15px;
+}
+.mainGridCursos .portadaCursos .bannerCursosTexto {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+.mainGridCursos .galeriaCursos {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin: 20px;
 }
-
-.galeria-producto {
+.mainGridCursos .galeriaCursos .galeria-producto {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.mainGridCursos .galeriaCursos img {
+  max-width: 50%;
+  border-radius: 15px;
+}
+
+/*==========================*/
+/* 2 SECCION DE CURSOS.HTML*/
+/*==========================*/
+.mainGridNosotros .portadaNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainGridNosotros .portadaNosotros .bannerNosotrosImg {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.mainGridNosotros .portadaNosotros .bannerNosotrosImg img {
+  border-radius: 15px;
+}
+.mainGridNosotros .portadaNosotros .bannerNosotrosTexto {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+.mainGridNosotros .galeriaNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainGridNosotros .galeriaNosotros .galeriaNosotrosImg {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.mainGridNosotros .galeriaNosotros .galeriaNosotrosImg img {
+  width: 30%;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 /*----------------------------------*/
 /*==========================*/
 /* 3 SECCION DE NOSOTROS.HTML*/
 /*==========================*/
-.galeria-nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-}
-
-.galeria-nosotros img {
-  width: 500px;
-  border-radius: 15px;
-}
-
 .content-nosotros {
   display: flex;
   flex-direction: row;
@@ -237,11 +278,6 @@ ul {
 /*==========================*/
 /* 4 SECCION DE CONTACTO.HTML*/
 /*==========================*/
-.img-contacto img {
-  width: 700px;
-  height: 480px;
-}
-
 .contactoFlex {
   display: flex;
   flex-direction: row;
@@ -252,33 +288,32 @@ ul {
   margin: 20px;
   border-radius: 15px;
 }
-
-.formulario {
+.contactoFlex .img-contacto img {
+  width: 700px;
+  height: 480px;
+}
+.contactoFlex .formulario {
   width: 500px;
   height: 400px;
+  margin-top: 40px;
   background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 42px;
-  border: solid white 2px;
   color: white;
 }
-
-.formulario input {
+.contactoFlex .formulario .formulario input {
   height: 25px;
 }
-
-.formularioFlex {
+.contactoFlex .formulario .formularioFlex {
   display: flex;
   flex-direction: column;
   width: 400px;
   margin: 5px;
 }
-
-.formularioFlex1 {
+.contactoFlex .formulario .formularioFlex1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -445,8 +480,8 @@ ul {
 .indexGrid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGrid mainGrid mainGrid" "footerGrid footerGrid footerGrid";
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGridIndex mainGridIndex mainGridIndex" "footerGrid footerGrid footerGrid";
 }
 
 /*==========================*/
@@ -455,8 +490,8 @@ ul {
 .cursosGrid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGrid mainGrid mainGrid" "footerGrid footerGrid footerGrid";
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGridCursos mainGridCursos mainGridCursos" "footerGrid footerGrid footerGrid";
 }
 
 /*==========================*/
@@ -465,8 +500,8 @@ ul {
 .nostrosGrid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGrid mainGrid mainGrid" "footerGrid footerGrid footerGrid";
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGridNosotros mainGridNosotros mainGridNosotros" "footerGrid footerGrid footerGrid";
 }
 
 /*==========================*/
@@ -559,22 +594,20 @@ ul {
     grid-template-rows: auto;
     grid-template-areas: "headerGrid" "mainGrid" "footerGrid";
   }
-  .navFlex a {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-  }
-  .galeria-cursos {
-    display: flex;
-    flex-direction: column;
-  }
-  .boton {
-    margin: 20px;
-  }
-  footer {
-    border-radius: 15px;
-  }
 }
+.galeria-cursos {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton {
+  margin: 20px;
+}
+
+footer {
+  border-radius: 15px;
+}
+
 /*==========================*/
 /*------MEDIAQUERY PARA NOSOTROS.HTML------*/
 /*==========================*/
@@ -591,26 +624,24 @@ ul {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: stretch;
-    padding: 2px;
   }
-  .navFlex a {
-    padding: 3px;
-  }
-  .galeria-nosotros img {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-  }
-  .content-nosotros {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-  }
-  .text-nosotros {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
+}
+.galeria-nosotros img {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.content-nosotros {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.text-nosotros {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
