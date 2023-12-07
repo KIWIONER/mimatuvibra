@@ -1,3 +1,4 @@
+@import"_indexGrid.scss";
 body{
     h1{font-size:40px;}
     h2{font-size:30px;}
@@ -43,96 +44,7 @@ body{
 /*===========================*/
 /*MAINGRIDINDEX*/
 /*============================*/
-.mainGridIndex{
-    /*section1*/
-    .portadaIndex{
-        display:flex; 
-        flex-direction:column;
-        text-align: center;
-        align-content: center;
-        .bannerIndexImg{
-            display: flex;
-            flex-direction:column;
-            text-align: center;
-            align-items:center;
-            max-width: 100%;
-            justify-content:center;
-            margin:10px;
-            img {border-radius:15px;} 
-        }
-        .portadaIndex-content{
-            display: flex;
-            flex-direction: column;
-            margin:10px;
-            text-align: center;
-            justify-content:center;
-            align-content: center;
-            max-width: 100%;
-            padding:15px;
-            background-color: black;
-            color: white;
-            border-radius:15px;
-        }
-    }
-    /*section2*/
-    .presentacionIndex { 
-        display:flex;
-        flex-direction:row;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        margin:10px;
-        margin-top:20px;
-        margin-bottom: 20px;
-        .presentacionIndexTexto{
-            display:flex;
-            flex-direction:column;
-            max-width:50%;
-            padding:10px;
-        }
-        .presentacionIndexImg{
-            max-width: 100%;
-            padding:10px;
-                img{width:70%;
-                height:70%;}
-        }
-    }
-    /*section3*/
-    .presentacion2Index{
-        display:flex;
-        margin-top: 30px;
-        padding: 20px;
-        margin: 20px;
-        justify-content: center;
-        text-align: center;
-        background-color:#000000;
-        color: rgb(255, 255, 255);  
-        border-radius:15px;
-    }
-    /*section4*/
-    .banner2IndexImg {
-        display: flex;
-            flex-direction:column;
-            text-align: center;
-            align-items:center;
-            max-width: 100%;
-            justify-content:center;
-            margin:10px;
-            img {border-radius:15px;}
-    }
-    /*section5*/
-    .galeriaIndex{
-        display:flex;
-        flex-direction: row;
-        text-align: center;
-        width: 100%;
-        margin-top: 40px;
-        article img {
-            width:50%;
-            border-radius:15px;
-        }
-    }
-}
+
 /*===========================*/
 /*MAINGRIDCURSOS*/
 /*============================*/
@@ -477,15 +389,7 @@ body{
 /*==========================*/
 /*PÁGINA INDEX CON GRID*/
 /*==========================*/
-.indexGrid{
-    display:grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas:
-    "headerGrid headerGrid headerGrid"
-    "mainGridIndex mainGridIndex mainGridIndex"
-    "footerGrid footerGrid footerGrid";
-}
+
 
 /*==========================*/
 /*PÁGINA CURSOS CON GRID*/
@@ -567,48 +471,7 @@ body{
 /*==========================*/
 /*------MEDIAQUERY PARA PÁGINA INDEX.HTML------*/
 /*==========================*/
-@media (max-width: 768px){
-    .indexGrid{
-        display:grid;
-        grid-template-columns: 100% ;
-        grid-template-rows: auto ;
-        grid-template-areas:
-        "headerGrid"
-        "mainGrid"
-        "footerGrid";
-    }
-    .presentacion-inicio{
-        display:flex;
-        flex-direction:column;
-    }
-    .presentacion-inicio-texto{
-        display: flex;
-        flex-direction:column;
-        max-width:100%;
-    }
-    .galeria-inicio{
-        display:flex;
-        flex-direction:column;
-        padding: 0px;
-    }
-    .galeria-inicio .boton{
-        margin-bottom: 20px;
-    }
-    .footerGrid .footerFlexRow{
-        display:flex;
-        flex-direction:column;
-    }
-    .form{
-        display:flex;
-        flex-direction:column;
-    }
-    .rrss{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        
-    }
-}
+
 
 /*==========================*/
 /*------MEDIAQUERY PARA CURSOS.HTML------*/
