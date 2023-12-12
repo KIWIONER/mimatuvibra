@@ -7,12 +7,12 @@
         text-align: center;
         align-content: center;
         .bannerIndexImg{
-            grid-area: "bannerIndexImg";
+            
             display: flex;
-            flex-direction:column;
+            flex-wrap: wrap;
             align-items:center;
             justify-content: center;
-            max-width:1fr;
+            max-width:100%;
         }
         .portadaIndex-content{
             display: flex;
@@ -21,7 +21,7 @@
             text-align: center;
             justify-content:center;
             align-content: center;
-            width: 100%;
+            max-width: 100%;
             padding:15px;
             background-color: black;
             color: white;
@@ -31,7 +31,7 @@
     /*section2*/
     .presentacionIndex { 
         display:flex;
-        flex-direction:row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
@@ -66,10 +66,10 @@
     /*section4*/
     .banner2IndexImg {
         display: flex;
-            flex-direction:column;
+            flex-wrap: wrap;
             text-align: center;
             align-items:center;
-            max-width: 100%;
+            max-width:100%;
             justify-content:center;
             margin:10px;
             img {border-radius:15px;}
@@ -77,11 +77,12 @@
     /*section5*/
     .galeriaIndex{
         display:flex;
-        flex-direction: row;
+        flex-wrap:row;
+        justify-content: center;
         text-align: center;
         width: 100%;
         margin-top: 40px;
-        article img {
+        img {
             width:50%;
             border-radius:15px;
         }
@@ -105,11 +106,23 @@
             "headerGrid"
             "mainGridIndex"
             "footerGrid";
-            } 
-            .portadaIndex{
-                img{max-width: 100%;}
+            .galeriaIndex{
+                flex-direction:column;
             }
+            }
+            .portadaIndex{
+                .bannerIndexImg{
+                    display:flex;
+                    flex-wrap: wrap;
+                    max-width:100%;
+                    img{ max-width:20%; flex-wrap:wrap;}
+                    }
+                }
+            
+            }
+            
+
         }
-        }
+
 
 
