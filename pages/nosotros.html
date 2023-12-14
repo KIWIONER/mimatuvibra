@@ -8,15 +8,12 @@
     <title>mimatuvibra-NOSOTROS</title>
 </head>
 <body id="nosotrosGrid">
-    <!--SECCION HEADER + NAVEGADOR-->
+    <!--SECCION HEADER + NAVEGADOR
     <header class="headerGrid">
-
-        <!--contenedor del logo-->
         <section class="logo">
             <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
         </section>
 
-        <!--contenedor del nav-->
         <section class="navFlex">
             <nav>
                 <a href="../index.html">Inicio</a>
@@ -26,13 +23,65 @@
             </nav>
         </section> 
 
-        <!--contenedor del carrito-->
+        contenedor del carrito
         <section class="carrito">
             <a href="carta.html"><img carrito" src="../images/carrito.png" alt="carrito de compras" height="50" width="50"></a>
         </section>     
+    </header>-->
+
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">mimatuvibra</a>
+                    <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cursos.html">Cursos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <span>
+                                    
+                                    <a class="nav-link" href="carta.html"><img src="../images/carrito.png" width="40" height="40"> Carrito</a>
+                                </span>
+                                
+
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-<!--MAINGRIDNOSOTROS-->
 
     <main class="mainGridNosotros">
         <!--sección portada-->
@@ -61,44 +110,32 @@
         </section>
         <!--seccion contenido-->
         <section class="contentNosotros">
+
             <article class="text-nosotros">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Eveniet ipsa, 
-                </h2>
-            <article>
+                <h2>Lorem ipsum</h2>
                 <img src="../images/6.png">
+                <p>
+                    este es un texto de prueba para poder formar un texto mayor y probar como 
+                    queda una orcaión larga dentro de esta sección
+                </p> 
             </article>
-                
-            <article>
-                    <p>
-                        este es un texto de prueba para poder formar un texto mayor y probar como 
-                        queda una orcaión larga dentro de esta sección
-                    </p>
-                </article> 
-            </article>
+
             <article class="text-nosotros">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Eveniet ipsa, 
+                <h2>Lorem ipsum,
                 </h2>
-                <div>
-                    <img src="../images/6.png">
-                    <p>
-                        este es un texto de prueba para poder formar un texto mayor y probar como 
-                        queda una orcaión larga dentro de esta sección
-                    </p>
-                </div>
+                <img src="../images/6.png">
+                <p>
+                        este es un texto de prueba para poder formar un texto mayor 
+                </p>
             </article>
             <article class="text-nosotros" >
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Eveniet ipsa, 
-                </h2>
-                <div>
-                    <img src="../images/6.png">
-                    <p>
-                        este es un texto de prueba para poder formar un texto mayor y probar como 
-                        queda una orcaión larga dentro de esta sección
-                    </p>
-                </div>
+                <h2>Lorem ipsum,</h2>
+                <img src="../images/6.png">
+                <p>
+                    este es un texto de prueba para poder formar un texto mayor y probar como 
+                    queda una orcaión larga dentro de esta sección
+                </p>
+                
             </article>
         </section>
     </main>

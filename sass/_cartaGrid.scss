@@ -1,0 +1,9 @@
+.cartaGrid{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:auto auto auto;
+    grid-template-areas:
+    "headerGrid headerGrid headerGrid"
+    "mainGrid mainGrid mainGrid"
+    "footerGrid footerGrid footerGrid";
+}

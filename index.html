@@ -9,15 +9,15 @@
     <title>mimatuvibra-INICIO</title>
 </head>
     <body id="indexGrid">
-    <!--HEADER-->
-        <header class="headerGrid">
 
-            <!--contenedor del logo-->
+        <!--<header class="headerGrid">
+
+
             <section class="logo">
                 <img src="images/logo.png" alt="mimatuvibra"  height="100" width="100">
             </section>
 
-            <!--contenedor del nav-->
+
             <section class="navFlex">
                 <nav>
                     <a href="#">Inicio</a>
@@ -27,94 +27,139 @@
                 </nav>
             </section>
 
-            <!--contenedor del carrito-->
+    contenedor del carrito
             <section class="carrito">
-                <a href="carta.html"><img "src="../images/carrito.png" alt="carrito de compras" height="50" width="50"></a>
+                <a href="carta.html"><img src="images/carrito.png" alt="carrito de compras" height="50" width="50"></a>
             </section>
-        </header>  
+        </header>-->
+        <header>
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="#">mimatuvibra</a>
+                        <span class="navbar-toggler-icon"></span>
+                        
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/cursos.html">Cursos</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <span>
+                                        
+                                        <a class="nav-link" href="carta.html"><img src="../images/carrito.png" width="40" height="40"> Carrito</a>
+                                    </span>
+                                    
+    
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
     <!--MAINGRIDINDEX -->       
         <main class="mainGridIndex">
     <!--SECTION 1-->
-            <section class="portadaIndex">
-                <article class="bannerIndexImg">
-                    <img src="images/portada-inicio.jpg">
-                </article>
-                <article class="portadaIndex-content">
+            <section class="bannerIndexImg">
+                <img src="images/portada-inicio.jpg">
+            </section>
+            <section class="bannerTexto">
+                <article >
                     <h1>Desarrollo personal y manifestación</h1>
                     <h2>Manifestar como por arte de magia</h2>
                     <h3>
                         La base para manifestar la vida de tus sueños siempre va a ser tu autoestima. 
                         Empieza a trabajar en tu merecimiento con mi cuaderno mima tu autoestima.
                     </h3>
-                    <a href="pages/nosotros.html"><button class="boton2">Nosotros</button></a>
+                    <a href="pages/nosotros.html"><button class="boton">Nosotros</button></a>
                 </article>
             </section>
     <!--SECTION 2-->
-            <section class="presentacionIndex">
-                <section class="presentacionIndexTexto">
-                    <article>
-                        <h2>Soy Tina</h2>
-                    </article>
-                    <article>
-                        <p>
-                            Emprendedora digital desde hace más de 4 años y practicante 
-                            de la ley de atracción y cumpliendo mis manifestaciones desde los 14.
-                        </p>
-                        <p>
-                            No siempre he trabajado para mí, porque además me costó bastante dar el paso de dejar 
-                            de depender de un trabajo convencional con un sueldo cada mes gracias a la "paz mental" que eso me aportaba. 
-                            Y cuando por fin di el paso, se me hizo grande y me derrumbé mentalmente. Al principio me iba genial, 
-                            todos los meses pagaba mis facturas, hasta que empecé a dejar de lado a mi familia, a mis amigas, ir al gimnasio, 
-                            dormir las horas necesarias y a tener pensamientos como "¿y si no llego a fin de mes porque no consigo mi objetivo?".
-                            Me dejé físicamente y mi autoestima se vio afectada, y en realidad estaba cumpliendo al 100% mis manifestaciones, 
-                            porque había caído en el bucle de los pensamientos destructivos. 
-                            
-                        </p>  
-                        <p>
-                            A parte de mi experiencia personal, en la que he aprendido mucho por el camino, 
-                            también he estudiado desarrollo personal y coaching, y he preparado con mucho amor 
-                            el cuaderno mima tu autoestima para que empieces a reprogramar tu mente de forma sencilla 
-                            y aprendas en qué punto te encuentras y mejores tu salud mental y tu mundo físico.
-                        </p>     
-                    </article>
-                    <article>
-                        <a href="pages/contacto.html"><button class="boton">Contacto</button></a>
-                    </article>     
-                </section>
-                <article class="presentacionIndexImg">
-                    <img src="images/soy tina.jpg" alt="soy tina">   
+            <section class="presentacionTexto">
+                <img src="images/soy tina.jpg" alt="soy tina">
+                <h2>Soy Tina</h2>
+                <article>
+                    <p>
+                        Emprendedora digital desde hace más de 4 años y practicante 
+                        de la ley de atracción y cumpliendo mis manifestaciones desde los 14.
+                    </p>
+                    <p>
+                        No siempre he trabajado para mí, porque además me costó bastante dar el paso de dejar 
+                        de depender de un trabajo convencional con un sueldo cada mes gracias a la "paz mental" que eso me aportaba. 
+                        Y cuando por fin di el paso, se me hizo grande y me derrumbé mentalmente. Al principio me iba genial, 
+                        todos los meses pagaba mis facturas, hasta que empecé a dejar de lado a mi familia, a mis amigas, ir al gimnasio, 
+                        dormir las horas necesarias y a tener pensamientos como "¿y si no llego a fin de mes porque no consigo mi objetivo?".
+                        Me dejé físicamente y mi autoestima se vio afectada, y en realidad estaba cumpliendo al 100% mis manifestaciones, 
+                        porque había caído en el bucle de los pensamientos destructivos. 
+                        
+                    </p>  
+                    <p>
+                        A parte de mi experiencia personal, en la que he aprendido mucho por el camino, 
+                        también he estudiado desarrollo personal y coaching, y he preparado con mucho amor 
+                        el cuaderno mima tu autoestima para que empieces a reprogramar tu mente de forma sencilla 
+                        y aprendas en qué punto te encuentras y mejores tu salud mental y tu mundo físico.
+                    </p> 
                 </article>
+                <a href="pages/contacto.html"><button class="boton">Contacto</button></a>
             </section>
     <!--SECTION 3-->
-            <section class="presentacion2Index">
-                <article>
-                    <h2>Siempre he creído en lo siguiente:</h2>
-                    <h3>"Puedes tener fácilmente lo que deseas, solo debes de pedirlo con educación."</h3>
-                    <p>
-                        Esa educación empieza por una misma, aprendiendo a sanar mentalmente y cumplir tus promesas.
-                        No tienes por qué esforzarte, y eso es lo que quiero enseñarte.
-                        A manifestar fácilmente con las mejores herramientas.
-                    </p>
-                </article>
-            </section>
+    <section class="banner2IndexImg">
+        <img src="images/banner.jpg" alt="banner inicio">
+    </section>
     <!--SECTION 4-->
-            <section class="banner2IndexImg">
-                <img src="images/banner.jpg" alt="banner inicio">
-            </section>  
+    <section class="presentacion2Index">
+        <article>
+            <h2>Siempre he creído en lo siguiente:</h2>
+            <h3>"Puedes tener fácilmente lo que deseas, solo debes de pedirlo con educación."</h3>
+            <p>
+                Esa educación empieza por una misma, aprendiendo a sanar mentalmente y cumplir tus promesas.
+                No tienes por qué esforzarte, y eso es lo que quiero enseñarte.
+                A manifestar fácilmente con las mejores herramientas.
+            </p>
+        </article>
+    </section>
     <!--SECTION 5-->        
             <section class="galeriaIndex">
-                <article>
-                    <img class="galeria" src="images/1.png">
+                <article class="galeria">
+                    <img src="images/1.png">
                     <h3>Descubre nuestros cursos</h3>
                     <a href="pages/cursos.html"><button class="boton">Cursos</button></a>
                 </article>
-                <article>
-                    <img class="galeria" src="images/1.png">
+                <article class="galeria">
+                    <img  src="images/1.png">
                     <h3>Descubre nuestros cursos</h3>
                     <a href="pages/cursos.html"><button class="boton">Cursos</button></a>
                 </article>
-                <article>
-                    <img class="galeria" src="images/1.png">
+                <article class="galeria">
+                    <img  src="images/1.png">
                     <h3>Descubre nuestros cursos</h3>
                     <a href="pages/cursos.html"><button class="boton">Cursos</button></a>
                 </article> 

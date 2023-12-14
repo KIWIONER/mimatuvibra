@@ -9,9 +9,9 @@
 </head>
 <body id="cursosGrid">
     <!-- HEADER-->
-    <header class="headerGrid">
+    <!--<header class="headerGrid">
         <section class="logo">
-            <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
+            <img src="../images/logo.png" alt="mimatuvibra"  height="80" width="80">
         </section>
         <section class="navFlex">
             <nav>
@@ -24,40 +24,78 @@
 
         <section class="carrito">
             <a href="carta.html"><img carrito" src="../images/carrito.png" alt="carrito de compras" height="50" width="50"></a>
-        </section>  
+        </section>
+    </header>-->
+
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">mimatuvibra</a>
+                    <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cursos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <span>
+                                    
+                                    <a class="nav-link" href="carta.html"><img src="../images/carrito.png" width="40" height="40"> Carrito</a>
+                                </span>
+                                
+
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+
         <!--SECCION DEL MAIN PARA CURSOS.HTML-->
     <main class="mainGridCursos">
 <!--section1-->
-        <section class ="portadaCursos">
-            <article class="bannerCursosImg">
-                <img src="../images/banner.jpg" alt="banner contacto">
-            </article>
-            <article class="bannerCursosTexto">
-                <h1>Desarrollo personal y manifestación</h1>
-                <h2>Prueba uno de nuestros cursos</h2>
-            </article>     
+        <section class="bannerCursosImg">
+            <img src="../images/banner.jpg" alt="banner contacto">
         </section>
-            
-            
-    
+        <section class="bannerCursosTexto">
+            <h1>Desarrollo personal y manifestación</h1>
+            <h2>Prueba uno de nuestros cursos</h2>
+        </section>   
     <!--MAINGRIDCURSOS-->
         <section class="galeriaCursos">
-
             <section class="galeria-producto">
                 <img src="../images/1.png">
                 <h3>Cuaderno de autoestima</h3>
                 <p><strong>8,50€</strong></p>
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripción
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample" >
-                    <div class="card card-body">
-                    Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                    </div>
-                </div>
                 <a href="carta.html"><button class="boton">comprar ahora</button></a>    
             </section>
 
@@ -65,16 +103,7 @@
                 <img src="../images/1.png">
                 <h3>Cuaderno de autoestima</h3>
                 <p><strong>8,50€</strong></p>
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripción
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample" >
-                    <div class="card card-body">
-                    Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                    </div>
-                </div>
+                
                 <a href="carta.html"><button class="boton">comprar ahora</button></a>
             </section>
 
@@ -82,16 +111,6 @@
                 <img src="../images/1.png">
                 <h3>Cuaderno de autoestima</h3>
                 <p><strong>8,50€</strong></p>
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripción
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample" >
-                    <div class="card card-body">
-                    Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                    </div>
-                </div>
                 <a href="carta.html"><button class="boton">comprar ahora</button></a>
             </section>
         </section>
@@ -101,16 +120,6 @@
                 <img src="../images/1.png">
                 <h3>Cuaderno de autoestima</h3>
                 <p><strong>8,50€</strong></p>
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripción
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample" >
-                    <div class="card card-body">
-                    Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                    </div>
-                </div>
                 <a href="carta.html"><button class="boton">comprar ahora</button></a>    
             </section>
     
@@ -118,16 +127,6 @@
                     <img src="../images/1.png">
                     <h3>Cuaderno de autoestima</h3>
                     <p><strong>8,50€</strong></p>
-                    <p class="d-inline-flex gap-1">
-                        <a class="btn btn-warning collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Descripción
-                        </a>
-                    </p>
-                    <div class="collapse" id="collapseExample" >
-                        <div class="card card-body">
-                        Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                        </div>
-                    </div>
                     <a href="carta.html"><button class="boton">comprar ahora</button></a>
             </section>
             
@@ -135,16 +134,6 @@
                 <img src="../images/1.png">
                 <h3>Cuaderno de autoestima</h3>
                 <p><strong>8,50€</strong></p>
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Descripción
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample" >
-                    <div class="card card-body">
-                    Aquí irá una pequeña descripción de nuestro producto. Este botoón cumple con la funcion de la consigan para usar bootstrap en nuestra web.
-                    </div>
-                </div>
                 <a href="carta.html"><button class="boton">comprar ahora</button></a>
             </section>
         </section>

@@ -1,0 +1,116 @@
+.nostrosGrid{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "headerGrid headerGrid headerGrid"
+    "mainGridNosotros mainGridNosotros mainGridNosotros"
+    "footerGrid footerGrid footerGrid";
+}
+.mainGridNosotros{
+    .portadaNosotros{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        .bannerNosotrosImg{
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: space-evenly;
+            width:100%;
+            overflow:hidden;
+            padding:15px;
+            img{
+                width:100%;
+                border-radius:15px;
+                }
+            }
+        .bannerNosotrosTexto{
+            border-radius: 15px;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+
+        }
+    }
+    .galeriaNosotros{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        .galeriaNosotrosImg{
+            display:flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+            img {
+                width:30%;
+                border-radius:30px;
+                padding:20px;
+                }
+            }
+            .tituloNosotros{
+                display:flex;
+                flex-direction:column;
+                text-align:center;
+                color:white;
+                background-color: black;
+                border-radius:15px;
+                margin: 20px;
+            }
+        }
+    .contentNosotros{
+        display:flex;
+        flex-direction:row;
+        justify-items:center;
+        text-align: center;
+        .text-nosotros{
+            display:flex;
+            border-radius: 15px;
+            border: solid 2px black;
+            margin: 10%;
+            color:rgb(0, 0, 0);
+            justify-items: center;
+            justify-content: center;
+            flex-direction:column;
+            width:100%;
+            
+            img{ width:80%;
+                margin-left:10%;
+            
+            }
+        }
+}
+@media (max-width:768px){
+    .nosotrosGrid{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: auto ;
+        grid-template-areas:
+        "headerGrid"
+        "mainGridNosotros"
+        "footerGrid";
+    }
+    .galeria-nosotros img{
+        display:flex;
+
+        width:50%;
+        
+    }
+    .contentNosotros{
+        display:flex;
+        flex-direction:column;
+        justify-items: center;
+        flex-wrap:wrap;
+        width:100%;
+            .text-nosotros{
+                
+                img{width:80%;}
+            }
+    
+        }
+
+    }
+}
+

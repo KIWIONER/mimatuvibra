@@ -1,0 +1,76 @@
+
+
+
+.mainGridCursos{
+    grid-area: "mainGridCursos";
+    .bannerCursosImg{
+        display: flex;
+        justify-content: center;
+        overflow:hidden;
+        width: 100%;
+        }  
+    .bannerCursosTexto{
+        border-radius: 15px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+        }
+    .galeriaCursos{
+                display: flex;
+                flex-direction:row;
+                width: 100%;
+                margin-bottom: 10px;
+                } 
+                .galeria-producto{
+                    display:flex;
+                    flex-direction:column;
+                    align-items: center;
+                    width:100%;
+                    img{
+                        width: 50%;
+                        border-radius:15px;
+                    }
+                }
+    
+    }
+    
+        
+
+    .cursosGrid{
+        display:grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "headerGrid headerGrid headerGrid"
+        "mainGridCursos mainGridCursos mainGridCursos"
+        "footerGrid footerGrid footerGrid";
+    }
+    @media (max-width: 768px){
+        .cursosGrid{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            grid-template-areas:
+            "headerGrid"
+            "mainGridCursos"
+            "footerGrid";
+            }
+        .galeriaCursos{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .galeria-producto{
+            flex-direction:column;
+            img{
+                width:80%;
+            }
+        }
+        .boton{
+            margin:20px;
+        }
+        footer{
+            border-radius:15px;
+        }
+    }
+
