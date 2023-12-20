@@ -11,25 +11,58 @@
 </head>
 <body id="contactoGrid">
 <!--SECCION HEADER-->
-    <header class="headerGrid">
-        <!--contenedor del logo-->
-        <section class="logo">
+<header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
             <img src="../images/logo.png" alt="mimatuvibra"  height="100" width="100">
-        </section>
-        <!--contenedor del navegador-->
-        <section class="navFlex">
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="cursos.html">Cursos</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </section>  
-        <!--contenedor del carrito-->
-        <section class="carrito">
-            <a href="carta.html"><img carrito" src="../images/carrito.png" alt="carrito de compras" height="50" width="50"></a>
-        </section>         
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">mimatuvibra</a>
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <span>
+                                
+                                <a class="nav-link" href="carta.html"><img src="../images/carrito.png" width="40" height="40"> Carrito</a>
+                            </span>
+                            
+
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 <!--SECCION DEL MAIN-->
     <main class="mainGridContacto">
         <!--SECCION DE LA PORTADA CONTACTO-->
@@ -48,9 +81,8 @@
             <article class="img-contacto">
                 <img src="../images/magentic-besties.jpg">
             </article>
-            <article>
-                <form class="formulario">
-
+            <article class="formulario">
+                <form>
                     <div class="formularioFlex">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre">

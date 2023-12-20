@@ -94,7 +94,7 @@
 
 @media (max-width: 768px) {
   .indexGrid {
-    grid-template-columns: 10% 80% 10 .indexGrid;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: auto auto auto;
     grid-template-areas: "headerGrid" "mainGridIndex" "footerGrid";
   }
@@ -106,7 +106,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGrid mainGrid mainGrid" "footerGrid footerGrid footerGrid";
+  grid-template-areas: "headerGrid headerGrid headerGrid" "mainGridContacto mainGridContacto mainGridContacto" "footerGrid footerGrid footerGrid";
 }
 
 .mainGridContacto .portadaContacto {
@@ -116,10 +116,12 @@
 }
 .mainGridContacto .portadaContacto .bannerContactoImg {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
 .mainGridContacto .portadaContacto .bannerContactoImg img {
+  width: 100%;
   border-radius: 15px;
 }
 .mainGridContacto .portadaContacto .bannerContactoTexto {
@@ -173,6 +175,39 @@
   padding: 5px;
 }
 
+@media (max-width: 768px) {
+  .contactoGrid {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "headerGrid" "mainGridCOntacto" "footerGrid";
+  }
+  .portadaContacto .bannerContactoImg {
+    margin-top: 20px;
+  }
+  .portadaContacto .bannerContactoImg img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  .contactoFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .contactoFlex .img-contacto {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    width: 100%;
+  }
+  .contactoFlex .img-contacto img {
+    max-width: 70%;
+  }
+  .contactoFlex .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .nostrosGrid {
   display: grid;
   grid-template-columns: 100%;
@@ -241,12 +276,12 @@
   display: flex;
   border-radius: 15px;
   border: solid 2px black;
-  margin: 10%;
+  margin: 20px;
+  padding: 10px;
   color: rgb(0, 0, 0);
   justify-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 .mainGridNosotros .contentNosotros .text-nosotros img {
   width: 80%;
@@ -259,9 +294,12 @@
     grid-template-rows: auto;
     grid-template-areas: "headerGrid" "mainGridNosotros" "footerGrid";
   }
+  .mainGridNosotros .bannerNosotrosImg img {
+    margin-top: 20%;
+  }
   .mainGridNosotros .galeria-nosotros img {
     display: flex;
-    width: 50%;
+    width: 100%;
   }
   .mainGridNosotros .contentNosotros {
     display: flex;
@@ -270,8 +308,17 @@
     flex-wrap: wrap;
     width: 100%;
   }
+  .mainGridNosotros .contentNosotros .text-nosotros {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px;
+  }
   .mainGridNosotros .contentNosotros .text-nosotros img {
-    width: 80%;
+    width: 70%;
+    margin-left: 70px;
+    border-radius: 15px;
+    border: black solid 5px;
   }
 }
 

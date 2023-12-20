@@ -100,7 +100,7 @@
 
 @media (max-width:768px){
         .indexGrid{
-            grid-template-columns:10% 80% 10&;
+            grid-template-columns:10% 80% 10%;
             grid-template-rows: auto auto auto ;
             grid-template-areas:
             "headerGrid"
