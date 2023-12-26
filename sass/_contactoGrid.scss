@@ -12,6 +12,7 @@
 .mainGridContacto{
     .portadaContacto{
         display:flex;
+
         flex-direction:column;
         justify-content:center;
         .bannerContactoImg{
@@ -20,15 +21,16 @@
             align-content: center;
             justify-content:center;
             img {
-                width:100%;
-                border-radius: 15px;}
+                width:100%;}
             } 
         .bannerContactoTexto{
             border-radius: 15px;
             display:flex;
             flex-direction: column;
+            align-self:center;
             text-align: center;
-            margin: 20px;
+            margin: 4%;
+            
             }
     }
     .contactoFlex{
@@ -37,16 +39,17 @@
         justify-content: space-evenly;
         align-items: start;
         background-color: rgb(3, 3, 3);
-        padding:20px;
-        margin:20px;
+        padding:2%;
+        margin:4%;
+        margin-top:0%;
         border-radius:15px;
         .img-contacto img{
-            width:700px;
-            height:480px;
+            width:100%;
+            
         }
         .formulario{
-            width:500px;
-            height:400px;
+            width:100%;
+            
             margin-top: 40px;
             background-color: rgb(0, 0, 0);
             display:flex;
@@ -87,9 +90,7 @@
     }
     .portadaContacto{
         .bannerContactoImg{
-            margin-top:20px;
-            img{
-                margin-top:20%;
+            img{ 
                 width:100%;}
         }
     
@@ -98,14 +99,14 @@
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
-        width:100%;
+        width:90%;
         .img-contacto{
             display:flex;
             justify-content: center;
             flex-direction: column;
             width: 100%;
             img{
-                width:100%;
+                max-width:100%;
             }
         }
         .formulario{
