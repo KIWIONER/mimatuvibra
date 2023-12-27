@@ -295,7 +295,15 @@ footer .creador p {
   .contactoFlex .formulario {
     display: flex;
     flex-direction: column;
-    padding: 4%;
+    text-align: center;
+  }
+  .contactoFlex .formulario .formularioFlex {
+    display: flex;
+  }
+  .contactoFlex .formulario .formularioFlex input {
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
   }
 }
 .nostrosGrid {

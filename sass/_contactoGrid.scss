@@ -112,7 +112,18 @@
         .formulario{
             display:flex;
             flex-direction:column;
-            padding:4%;
+            text-align: center;
+            .formularioFlex{
+                display:flex;
+                
+                
+                input{
+                    margin-left: 10%;
+                    width:80%;
+                    text-align: center;
+                }
+            }
+            
         }
 
     }
