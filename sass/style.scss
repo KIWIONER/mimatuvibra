@@ -1,10 +1,11 @@
+@import"_footerGrid.scss";
 @import"_indexGrid.scss";
 @import"_contactoGrid.scss";
 @import"_nosotrosGrid.scss";
 @import"_cursosGrid.scss";
 @import"_cartaGrid.scss";
 @import"_headerGrid.scss";
-@import"_footerGrid.scss";
+
 
 body{
     h1{font-size:40px;}
@@ -14,21 +15,6 @@ body{
     ul{list-style-type: none;}
     a{text-decoration:none;color:black;font-size:20px;}
 }
-
-/*==========================*/
-/* 5 SECCION DE LA PÁGINA CARTA.HTML*/
-/*==========================*/
-
-
-/*==========================*/
-/*SECCION DEL FOOTER*/   
-/*==========================*/
-
-/*------------------------*/
-
-/*==========================*/
-/*SECCION DE BOTONES E ICONOS DE LA PÁGINA*/
-/*==========================*/
 
 .boton{
     width:200px;
@@ -60,26 +46,4 @@ body{
     width: 50px;
     height: 50px;
 }
-.form{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    margin:10px;
-}
-.rrss-logos {
-    margin:10px;
-    list-style: none;
-    font-size:18px
-}
-.input {
-    padding:4px;
-    height:21px;
-    padding:4px;
-    align-items: center;
-    border:none;
-    border-radius:5px;
-    width:200px;
-    margin:10px;
-    
-}
-/*---------------------------------------------------------*/
+

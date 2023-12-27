@@ -47,7 +47,7 @@
         "footerGrid footerGrid footerGrid";
     }
     @media (max-width: 768px){
-        .cursosGrid{
+        .mainCursosGrid{
             display:grid;
             grid-template-columns: 100%;
             grid-template-rows: 100%;
@@ -56,21 +56,25 @@
             "mainGridCursos"
             "footerGrid";
             }
-        .galeriaCursos{
-            display:flex;
-            flex-wrap:wrap;
+        .bannerCursosImg{
+            img{width:100%;}
         }
-        .galeria-producto{
-            flex-direction:column;
-            img{
+        .galeriaCursos{
+            flex-wrap:wrap;
+            max-width:100%;
+            .galeria-producto{
+                h3{margin-top: 3%;}
+                flex-direction:column;
+                img{
                 width:80%;
-            }
+                }
         }
         .boton{
             margin:20px;
         }
         footer{
             border-radius:15px;
+        }
         }
     }
 
