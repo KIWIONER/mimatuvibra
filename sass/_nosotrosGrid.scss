@@ -19,10 +19,9 @@
             justify-content: space-evenly;
             width:100%;
             overflow:hidden;
-            padding:15px;
             img{
                 width:100%;
-                border-radius:15px;
+                
                 }
             }
         .bannerNosotrosTexto{
@@ -93,9 +92,6 @@
         "headerGrid"
         "mainGridNosotros"
         "footerGrid";
-    }
-    .bannerNosotrosImg{
-        img{margin-top:20%;}
     }
     .galeria-nosotros img{
         display:flex;

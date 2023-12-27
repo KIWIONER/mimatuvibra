@@ -308,11 +308,9 @@ footer .creador p {
   justify-content: space-evenly;
   width: 100%;
   overflow: hidden;
-  padding: 15px;
 }
 .mainGridNosotros .portadaNosotros .bannerNosotrosImg img {
   width: 100%;
-  border-radius: 15px;
 }
 .mainGridNosotros .portadaNosotros .bannerNosotrosTexto {
   border-radius: 15px;
@@ -374,9 +372,6 @@ footer .creador p {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "headerGrid" "mainGridNosotros" "footerGrid";
-  }
-  .mainGridNosotros .bannerNosotrosImg img {
-    margin-top: 20%;
   }
   .mainGridNosotros .galeria-nosotros img {
     display: flex;
