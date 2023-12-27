@@ -69,6 +69,14 @@ footer{
                 margin-left:0%;
                 .rrss-iconos{width:100%;}
             }
+            .form-footer{
+                display:flex;
+                flex-direction:column;
+                flex-wrap:wrap;
+                .form{
+                    flex-direction:column;
+                }
+            }
             
         }
     }

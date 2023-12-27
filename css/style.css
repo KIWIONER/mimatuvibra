@@ -73,6 +73,14 @@ footer .creador p {
   footer .footerGrid .rrss .rrss-iconos {
     width: 100%;
   }
+  footer .footerGrid .form-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .footerGrid .form-footer .form {
+    flex-direction: column;
+  }
 }
 .mainGridIndex .bannerIndexImg {
   display: flex;
