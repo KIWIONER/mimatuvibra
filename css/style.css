@@ -405,6 +405,8 @@ footer .creador p {
   display: flex;
   justify-content: center;
   overflow: hidden;
+}
+.mainGridCursos .bannerCursosImg img {
   width: 100%;
 }
 .mainGridCursos .bannerCursosTexto {
@@ -412,7 +414,6 @@ footer .creador p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
 }
 .mainGridCursos .galeriaCursos {
   display: flex;
@@ -433,8 +434,8 @@ footer .creador p {
 
 .cursosGrid {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   grid-template-areas: "headerGrid headerGrid headerGrid" "mainGridCursos mainGridCursos mainGridCursos" "footerGrid footerGrid footerGrid";
 }
 
