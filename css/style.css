@@ -295,6 +295,7 @@ footer .creador p {
   .contactoFlex .formulario {
     display: flex;
     flex-direction: column;
+    padding: 4%;
   }
 }
 .nostrosGrid {
