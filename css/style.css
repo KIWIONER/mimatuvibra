@@ -296,9 +296,11 @@ footer .creador p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   .contactoFlex .formulario .formularioFlex {
     display: flex;
+    width: 100%;
   }
   .contactoFlex .formulario .formularioFlex input {
     margin-left: 10%;
