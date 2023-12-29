@@ -4,27 +4,30 @@ footer{
     background-color:black;
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: black;
     color: rgb(255, 255, 255);
     padding:2%;
     .links{
         display:flex;
         flex-direction:column;
-        width:25%;
+        width:19%;
         }
     .rrss{
         display:flex;
         flex-direction:column;
         text-align: center;
-        align-content:center;
+
         list-style-type: none;
-        width:50%;
+        max-width:40%;
+        width:20%;
         .rrss-iconos{
             display:flex;
             flex-direction:row;
-            justify-content: center;
-            img{width:5%; padding:0.5%;}
+            margin:1%;
+            justify-content: stretch;
+            align-content:center;
+            img{width:50%;}
             }
         }
     .form-footer{
@@ -45,8 +48,12 @@ footer{
         background-color: black;
         color:white;
         text-align: center;
+        align-content: center;
+        width:100%;
         padding:1%;
-        p{font-size: 12px;}
+
+        p{font-size: 13px;
+        text-align:center;}
     }
 }
 
@@ -64,17 +71,22 @@ footer{
                 width:100%;
             }
             .rrss{
-                width:100%;
+                width:50%;
                 text-align:center;
-                margin-left:0%;
-                .rrss-iconos{width:100%;}
+                
+                .rrss-iconos{
+                    max-width:100%;
+                    img{width:40%;}
+                }
             }
             .form-footer{
                 display:flex;
                 flex-direction:column;
                 flex-wrap:wrap;
                 .form{
+                    display:flex;
                     flex-direction:column;
+                    align-items:center;
                 }
             }
             

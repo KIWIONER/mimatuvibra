@@ -55,7 +55,7 @@ footer .footerGrid {
   background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: black;
   color: rgb(255, 255, 255);
   padding: 2%;
@@ -63,24 +63,25 @@ footer .footerGrid {
 footer .footerGrid .links {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 19%;
 }
 footer .footerGrid .rrss {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-content: center;
   list-style-type: none;
-  width: 50%;
+  max-width: 40%;
+  width: 20%;
 }
 footer .footerGrid .rrss .rrss-iconos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin: 1%;
+  justify-content: stretch;
+  align-content: center;
 }
 footer .footerGrid .rrss .rrss-iconos img {
-  width: 5%;
-  padding: 0.5%;
+  width: 50%;
 }
 footer .footerGrid .form-footer {
   display: flex;
@@ -98,10 +99,13 @@ footer .creador {
   background-color: black;
   color: white;
   text-align: center;
+  align-content: center;
+  width: 100%;
   padding: 1%;
 }
 footer .creador p {
-  font-size: 12px;
+  font-size: 13px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -118,12 +122,14 @@ footer .creador p {
     width: 100%;
   }
   footer .footerGrid .rrss {
-    width: 100%;
+    width: 50%;
     text-align: center;
-    margin-left: 0%;
   }
   footer .footerGrid .rrss .rrss-iconos {
-    width: 100%;
+    max-width: 100%;
+  }
+  footer .footerGrid .rrss .rrss-iconos img {
+    width: 40%;
   }
   footer .footerGrid .form-footer {
     display: flex;
@@ -131,7 +137,9 @@ footer .creador p {
     flex-wrap: wrap;
   }
   footer .footerGrid .form-footer .form {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .mainGridIndex .bannerIndexImg {
@@ -588,6 +596,7 @@ footer .creador p {
 }
 .mainCartaGrid .imagen-carrito img {
   padding: 1%;
+  margin-top: 2%;
   width: 100%;
 }
 .mainCartaGrid .texto-carrito {
