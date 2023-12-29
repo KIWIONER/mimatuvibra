@@ -1,3 +1,55 @@
+body h1 {
+  font-size: 40px;
+}
+body h2 {
+  font-size: 30px;
+}
+body h3 {
+  font-size: 20px;
+}
+body p {
+  font-size: 20px;
+}
+body ul {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.boton {
+  width: 200px;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.boton a :hover {
+  background-color: greenyellow;
+  color: #000000;
+}
+
+.boton2 {
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.carrito {
+  width: 50px;
+  height: 50px;
+}
+
 footer .footerGrid {
   grid-area: "footerGrid";
   background-color: black;
@@ -433,20 +485,27 @@ footer .creador p {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 2%;
 }
 .mainGridCursos .galeriaCursos {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
 }
 .mainGridCursos .galeria-producto {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: 1%;
+}
+.mainGridCursos .galeria-producto .zoom:hover {
+  transform: scale(1.23);
 }
 .mainGridCursos .galeria-producto img {
+  margin: 7%;
+  padding: 1%;
   width: 50%;
   border-radius: 15px;
 }
@@ -480,6 +539,8 @@ footer .creador p {
   }
   .galeriaCursos .galeria-producto img {
     width: 80%;
+    margin: 10%;
+    padding: 2%;
   }
   .galeriaCursos .boton {
     margin: 20px;
@@ -511,9 +572,14 @@ footer .creador p {
   max-width: 15%;
   padding: 1%;
 }
+.mainCartaGrid .carrusel-carta .zoom:hover {
+  transform: scale(1.23);
+}
 .mainCartaGrid .carrusel-carta img {
   width: 80%;
   margin-bottom: 10%;
+  margin: 7%;
+  padding: 2%;
 }
 .mainCartaGrid .imagen-carrito {
   display: flex;
@@ -521,13 +587,14 @@ footer .creador p {
   padding: 1%;
 }
 .mainCartaGrid .imagen-carrito img {
+  padding: 1%;
   width: 100%;
 }
 .mainCartaGrid .texto-carrito {
   display: flex;
   flex-direction: column;
   max-width: 40%;
-  padding: 1%;
+  padding: 2%;
 }
 
 @media (max-width: 768px) {
@@ -549,11 +616,13 @@ footer .creador p {
     max-width: 100%;
   }
   .mainCartaGrid .carrusel-carta img {
-    max-width: 33%;
-    padding: 1%;
+    max-width: 30%;
+    margin: 1.7%;
   }
   .mainCartaGrid .texto-carrito {
     max-width: 100%;
+    text-align: justify;
+    align-items: center;
   }
 }
 .headerGrid {
@@ -587,58 +656,6 @@ footer .creador p {
   align-content: center;
   justify-items: center;
   justify-content: center;
-}
-
-body h1 {
-  font-size: 40px;
-}
-body h2 {
-  font-size: 30px;
-}
-body h3 {
-  font-size: 20px;
-}
-body p {
-  font-size: 20px;
-}
-body ul {
-  list-style-type: none;
-}
-body a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.boton {
-  width: 200px;
-  height: 50px;
-  align-content: center;
-  align-items: center;
-  background-color: black;
-  border: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 5px;
-}
-.boton a :hover {
-  background-color: greenyellow;
-  color: #000000;
-}
-
-.boton2 {
-  width: 200px;
-  background-color: rgb(255, 255, 255);
-  border: none;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  padding: 3px;
-  border-radius: 5px;
-}
-
-.carrito {
-  width: 50px;
-  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@import"_general.scss";
 @import"_footerGrid.scss";
 @import"_indexGrid.scss";
 @import"_contactoGrid.scss";
@@ -6,44 +7,4 @@
 @import"_cartaGrid.scss";
 @import"_headerGrid.scss";
 
-
-body{
-    h1{font-size:40px;}
-    h2{font-size:30px;}
-    h3{font-size:20px;}
-    p{font-size: 20px;}
-    ul{list-style-type: none;}
-    a{text-decoration:none;color:black;font-size:20px;}
-}
-
-.boton{
-    width:200px;
-    height: 50px;
-    align-content:center;
-    align-items: center;
-    background-color: black;
-    border: none;
-    font-size: 20px;
-    color:white;
-    border-radius: 5px;
-    a :hover{
-        background-color: greenyellow;
-        color:#000000;
-    }
-}
-
-.boton2{
-    width:200px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    font-size: 20px;
-    color:rgb(0, 0, 0);
-    padding: 3px;
-    border-radius: 5px;
-}
-
-.carrito{
-    width: 50px;
-    height: 50px;
-}
 
